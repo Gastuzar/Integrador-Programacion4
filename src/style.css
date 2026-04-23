@@ -1,0 +1,340 @@
+:root {
+    --primary-color: #ff6347;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --white-color: #fff;
+    --border-color: #ddd;
+    --focus-color: #ff4500;
+    --shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('./assets/Montserrat-Medium.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat-Medium', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+.login-card {
+    margin: 20vh auto;
+    width: 90%;
+    text-align: center;
+    max-width: 420px;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    box-shadow: var(--shadow);
+    background-color: var(--white-color);
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.login-card__logo {
+    margin: 10px 0 0 0;
+    color: var(--primary-color);
+    font-size: 2.4em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.login-card__title {
+    margin: 7px 0 25px 0;
+    color: var(--text-color);
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.login-card__input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-card__label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.login-card__input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 7px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 0.95em;
+    transition: border-color 0.3s;
+}
+
+.login-card__input:focus {
+    outline: none;
+    border-color: var(--focus-color);
+    border-width: 1.8px;
+}
+
+.login-card__error-message {
+    color: #e03030;
+    font-size: 0.82em;
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.login-card__button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.login-card__button:hover {
+    background-color: var(--focus-color);
+}
+
+.login-card__footer {
+    margin-top: 20px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1em;
+}
+
+.login-card__link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-card__link:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+REGISTRO CARD
+   ================================ */
+
+.registro-card {
+    margin: 20vh auto;
+    width: 90%;
+    text-align: center;
+    max-width: 420px;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    box-shadow: var(--shadow);
+    background-color: var(--white-color);
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.registro-card__logo {
+    margin: 10px 0 0 0;
+    color: var(--primary-color);
+    font-size: 2.4em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.registro-card__title {
+    margin: 7px 0 25px 0;
+    color: var(--text-color);
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.registro-card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.registro-card__label {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.registro-card__input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 7px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 0.95em;
+    transition: border-color 0.3s;
+}
+
+.registro-card__input:focus {
+    outline: none;
+    border-color: var(--focus-color);
+    border-width: 1.8px;
+}
+
+.registro-card__error-message {
+    color: #e03030;
+    font-size: 0.82em;
+    text-align: left;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.registro-card__button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.registro-card__button:hover {
+    background-color: var(--focus-color);
+}
+
+.registro-card__footer {
+    margin-top: 20px;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1em;
+}
+
+.registro-card__text {
+    margin-bottom: 4px;
+}
+
+.registro-card__link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registro-card__link:hover {
+    text-decoration: underline;
+}
+/*ADMIN HOME*/
+
+.admin-navbar {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+}
+
+.admin-titulo {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 40px 30px 20px 30px;
+}
+
+.admin-logout {
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-weight: bold;
+    font-size: 0.95em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    margin: 0 30px;
+}
+
+.admin-logout:hover {
+    background-color: var(--focus-color);
+}
+.admin-list {
+    margin: 20px 30px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    font-family: 'Montserrat-Medium', sans-serif;
+    list-style: none; /* Quitamos los puntos de la lista */
+}
+
+/* El Elemento */
+.admin-list__item {
+    padding: 10px 5px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+/* Quitamos el borde al último elemento para que se vea limpio */
+.admin-list__item:last-child {
+    border-bottom: none;
+}
+
+/* Opcional: Un modificador por si quieres resaltar al admin */
+.admin-list__item--highlight {
+    font-weight: bold;
+    color: var(--text-color);
+}
+/*CLIENT */
+
+.client-titulo {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 40px 30px 20px 30px;
+}
+
+.client-logout {
+    padding: 10px 24px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-weight: bold;
+    font-size: 0.95em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    margin: 0 30px;
+}
+
+.client-logout:hover {
+    background-color: var(--focus-color);
+}
