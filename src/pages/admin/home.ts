@@ -14,7 +14,7 @@ const usersListElement = document.getElementById("usersList") as HTMLUListElemen
 const renderUsers = () => {
     const users: IUser[] = JSON.parse(localStorage.getItem("users") || "[]");
 
-    // Limpiamos la lista antes de renderizar 
+    // Limpio la lista antes de renderizar 
     usersListElement.innerHTML = "";
 
     users.forEach((user) => {

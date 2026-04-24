@@ -35,7 +35,7 @@ form.addEventListener("submit", (e: Event) => {
     id: Date.now(),
     email,
     password,
-    rol,
+    rol ,
     loggedIn: false,
   };
 

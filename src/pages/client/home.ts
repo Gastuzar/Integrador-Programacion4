@@ -9,9 +9,12 @@ buttonLogout?.addEventListener("click", () => {
 
 
 const initPage = () => {
-  console.log("inicio de pagina");
-  checkAuth(
-    "client",
-  );
+  //usuario actual para saber quién es
+  const currentUser = JSON.parse(localStorage.getItem("userData") || "null");
+
+  if (!currentUser) {
+      logout();
+      return;
+  }
 };
 initPage();

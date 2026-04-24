@@ -17,8 +17,15 @@ export function checkAuth(rolRequerido: Rol): void {
     // Si hay sesión, verificamos el rol
     const userData: IUser = JSON.parse(userDataRaw);
 
+    // Si el rol requerido es "client" y el rol del usuario es "admin" permito el acceso, pero si el rol requerido es "admin" y el rol del usuario es "client", redirijo al cliente a su home
+    if (rolRequerido === "client" && userData.rol === "admin") {
+        navigate("/src/pages/client/home.html");
+        return;
+    }
+
     // Si el rol no coincide, redirigimos
-    if (userData.rol !== rolRequerido) {
+    // if (userData.rol !== rolRequerido) {
+    if (rolRequerido === "admin" && userData.rol === "client") {
         alert("No tenés permisos para acceder a esta sección");
         navigate("/src/pages/auth/login/login.html");
     }
